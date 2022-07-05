@@ -7,5 +7,6 @@ public class Main {
     System.out.println(myPerson.sayHello());
     System.out.println(myPerson.allInformation());
     myPerson.canDrinkAlcohol();
+    myPerson.height();
  }
 }

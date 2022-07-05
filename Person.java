@@ -18,6 +18,10 @@ public class Person{
     {
       return "Hello "+name+" "+surname;
     }
+    public void height(){
+      for(int i=0;i<this.height;i++)
+      System.out.print("|");
+    }
     public void canDrinkAlcohol()
     {
       if (this.age>=18)
