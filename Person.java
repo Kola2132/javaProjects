@@ -18,4 +18,11 @@ public class Person{
     {
       return "Hello "+name+" "+surname;
     }
+    public void canDrinkAlcohol()
+    {
+      if (this.age>=18)
+      System.out.println(this.name+" moze pic");
+      else
+      System.out.println(this.name+" moze pic ale nielegalnie :D");
+    }
   }

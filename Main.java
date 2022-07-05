@@ -6,5 +6,6 @@ public class Main {
     myPerson.setData(16, 192,83);
     System.out.println(myPerson.sayHello());
     System.out.println(myPerson.allInformation());
+    myPerson.canDrinkAlcohol();
  }
 }
