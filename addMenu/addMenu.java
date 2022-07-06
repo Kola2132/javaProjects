@@ -4,8 +4,6 @@ import java.security.PermissionCollection;
 public class addMenu {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in); 
-        Scanner scan = new Scanner(System.in); 
-        String temp=" ";
         int pom=0;
         int i=0;
         String[] persons;
@@ -15,8 +13,8 @@ public class addMenu {
             i=sc.nextInt();
             if(i==1){
                 System.out.println("Podaj imie i nazwisko: ");
-                temp=scan.nextLine();
-                persons[pom]=temp;
+                sc.nextLine();
+                persons[pom]=sc.nextLine();
                 pom++;
             }
             if(i==2){
@@ -25,5 +23,6 @@ public class addMenu {
                 }
             }
           }
+          sc.close();
       }
   }
