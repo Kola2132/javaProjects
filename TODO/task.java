@@ -1,8 +1,8 @@
-public class task {
+public class Task {
     int ID;
     String name;
     String status;
-    task(int ID, String name){
+    Task(int ID, String name){
         this.ID=ID;
         this.name=name;
         this.status="NEW";
