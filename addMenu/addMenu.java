@@ -1,4 +1,4 @@
-import java.util.Scanner; 
+import java.util.Scanner;
 import java.security.PermissionCollection;
 
 public class addMenu {
@@ -10,10 +10,10 @@ public class addMenu {
         persons = new String[100];
           while(i!=3){
             System.out.println("Witaj, co chcesz zrobic, wpisz:\n1 - dodaj osobe;\n2 - wyswietl wszystkich;\n3 - zakoncz;");
+            try {
             i=sc.nextInt();
             if(i==1){
                 System.out.println("Podaj imie i nazwisko: ");
-                sc.nextLine();
                 persons[pom]=sc.nextLine();
                 pom++;
             }
@@ -22,7 +22,10 @@ public class addMenu {
                     System.out.println(persons[j]);
                 }
             }
-          }
+       }catch(Exception e){
+                System.out.println("To nie liczba");
+            }
+        }    
           sc.close();
       }
   }
