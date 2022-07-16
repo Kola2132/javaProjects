@@ -1,25 +1,26 @@
+import java.util.UUID;
+
 public class Task {
-    int ID;
+    String ID;
     String name;
     TaskStatus status;
-    int pom = 1;
 
     Task(String name) {
-        this.ID = pom;
+        this.ID = UUID.randomUUID().toString();
+        ;
         this.name = name;
         this.status = TaskStatus.NEW;
-        pom++;
     }
 
     public void setStatus(TaskStatus taskStatus) {
-        status = taskStatus;
+        this.status = taskStatus;
     }
 
     public void editName(String newName) {
-        name = newName;
+        this.name = newName;
     }
 
     public void print() {
-        System.out.println(ID + ": " + name + " (Status: " + status + ")");
+        System.out.println(this.ID + ": " + this.name + " (Status: " + this.status + ")");
     }
 }
